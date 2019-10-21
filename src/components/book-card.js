@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import {Link, useStaticQuery, graphql} from "gatsby"
+import {useStaticQuery, graphql} from "gatsby"
 import React from "react"
 import Heading from "./heading";
 import CoverDefault from "../images/cover-default.jpg";
@@ -8,13 +8,13 @@ import FluidImage from './fluid-image';
 
 
 
-const BookCard = ({bookTitle, bookCover, bookLink, key }) => {
+const BookCard = ({bookTitle, bookCover, bookLink}) => {
     return (
-        <Link to={bookLink} key={key}>
+        <a href={bookLink}>
             <div className="bookCard" style={{height:400, width:300,backgroundImage:`url(${bookCover})`, backgroundPosition:`center`, backgroundSize:`cover`, backgroundRepeat:`no-repeat`}}>
                 <Heading headingText={bookTitle}/>
             </div>
-        </Link>
+        </a>
     )
 
 }

@@ -1,22 +1,17 @@
 import React from 'react';
+import { StaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 import BookCard from "../components/book-card";
 const { Component } = React;
 
-
-const someArrayOfPosts = [
-    { title: 'some title for post 1', excerpt: 'this is an excerpt for post one' },
-    { title: 'some title for post 2', excerpt: 'this is an excerpt for post two' },
-    { title: 'some title for post 3', excerpt: 'this is an excerpt for post three' }
-];
 
 
 class FeaturedBooks extends Component {
 
     render() {
+      const { title, excerpt } = this.props;
 
-        return (
-
-
+      return (
             someArrayOfPosts.map(post => (
 
             <BookCard bookTitle={post.title} key={post.title}  />
