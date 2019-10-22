@@ -1,20 +1,21 @@
 import PropTypes from "prop-types"
-import {useStaticQuery, graphql} from "gatsby"
 import React from "react"
 import Heading from "./heading";
 import CoverDefault from "../images/cover-default.jpg";
 
 import FluidImage from './fluid-image';
-
+import Img from "gatsby-image"
 
 
 const BookCard = ({bookTitle, bookCover, bookLink}) => {
     return (
+      <div className={`bookCard`}>
         <a href={bookLink}>
-            <div className="bookCard" style={{height:400, width:300,backgroundImage:`url(${bookCover})`, backgroundPosition:`center`, backgroundSize:`cover`, backgroundRepeat:`no-repeat`}}>
+          <Img fluid={bookCover} />
                 <Heading headingText={bookTitle}/>
-            </div>
+
         </a>
+      </div>
     )
 
 }
@@ -33,7 +34,7 @@ const BookCard = ({bookTitle, bookCover, bookLink}) => {
 BookCard.defaultProps = {
     key: ``,
     bookTitle: ``,
-    bookCover: CoverDefault,
+    bookCover: '',
     bookLink: `/some-page`,
 }
 
