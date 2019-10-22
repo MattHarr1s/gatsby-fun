@@ -1,7 +1,7 @@
 ---
 title: "this new book"
 featuredImage: ./masking-virgin.jpg
-amazonLink: www.amazon.com/Binding-Virgin-Club-Lush-Book-ebook/dp/B07QL1Z24F
+amazonLink: https://www.amazon.com/Binding-Virgin-Club-Lush-Book-ebook/dp/B07QL1Z24F
 date: "2017-08-10"
 ---
 

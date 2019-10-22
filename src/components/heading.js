@@ -18,7 +18,7 @@ const Heading = ({headingText, fontColorValue,  textAlignValue, fontSizeValue}) 
 
 Heading.defaultProps = {
     headingText:``,
-    fontColorValue: `#ffffff`,
+    fontColorValue: ``,
     textAlignValue: `center`,
     fontSizeValue: `3.0rem`,
 }

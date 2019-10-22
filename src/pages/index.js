@@ -8,12 +8,14 @@ import BookCard from "../components/book-card"
 import FeaturedBooks from "../components/featured-books"
 import Img from "gatsby-image"
 import Section from "../components/section"
+import Heading from "../components/heading"
 
 
 export default ({ data }) => {
   return (
     <Layout>
-      <Section>
+      <Section backgroundColor={`purple`}>
+        <Heading headingText={`Featured Books`} />
         <div className={`featuredBooks`}>
           <FeaturedBooks/>
         </div>

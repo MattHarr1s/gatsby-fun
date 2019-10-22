@@ -9,18 +9,22 @@ import Img from "gatsby-image"
 
 const BookCard = ({bookTitle, bookCover, bookLink}) => {
     return (
+      <a href={bookLink} >
       <div className={`bookCard`}>
-        <a href={bookLink}>
+        <Heading style={{color:`black`}} headingText={bookTitle}/>
           <Img fluid={bookCover} />
-                <Heading headingText={bookTitle}/>
 
-        </a>
       </div>
+      </a>
     )
 
 }
 
-
+BookCard.propTypes = {
+  bookTitle: PropTypes.string,
+  bookCover: PropTypes.object,
+  bookLink: PropTypes.string,
+}
 
 
 
