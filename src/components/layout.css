@@ -629,6 +629,24 @@ pre tt:after {
 a {
   background-image: none;
 }
+
+@media only screen and (max-width: 960px) {
+  .featuredBooks {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .bookCard {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+}
+
+
+
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

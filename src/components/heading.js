@@ -20,7 +20,7 @@ Heading.defaultProps = {
     headingText:``,
     fontColorValue: ``,
     textAlignValue: `center`,
-    fontSizeValue: `2.0rem`,
+    fontSizeValue: `1.5rem`,
 }
 
 Heading.propTypes = {
