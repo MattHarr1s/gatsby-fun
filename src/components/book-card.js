@@ -1,9 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Heading from "./heading";
-import CoverDefault from "../images/cover-default.jpg";
-
-import FluidImage from './fluid-image';
 import Img from "gatsby-image"
 
 
@@ -13,7 +10,6 @@ const BookCard = ({bookTitle, bookCover, bookLink}) => {
       <div className={`bookCard`}>
         <Heading style={{color:`black`}} headingText={bookTitle}/>
           <Img fluid={bookCover} />
-
       </div>
       </a>
     )

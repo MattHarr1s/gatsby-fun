@@ -625,6 +625,10 @@ pre tt:after {
 .bookCard {
   max-width: 300px;
 }
+
+a {
+  background-image: none;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

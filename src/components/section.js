@@ -18,7 +18,7 @@ const Section = ({children, heightValue, backgroundColor}) => {
 }
 
 Section.defaultProps = {
-    heightValue: `400`,
+    heightValue: ``,
     backgroundColor: PropTypes.string.isRequired,
 
 }
