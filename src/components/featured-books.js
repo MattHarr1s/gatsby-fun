@@ -1,11 +1,11 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import BookCard from "./book-card"
-const FeaturedBooks = (props) => {
-  return (
-    <StaticQuery
-      query={ graphql`
-        query FeaturedBooksQuery {
+const FeaturedBooks = () => {
+
+    const books  = useStaticQuery(
+      graphql`
+        query {
           allMarkdownRemark(limit: 5, filter: {fileAbsolutePath: {regex: "/books/"}}) {
             edges {
               node {
@@ -28,14 +28,17 @@ const FeaturedBooks = (props) => {
           }
         }
 
-    `}
-      render={data => (
-        data.allMarkdownRemark.edges.map((book, i) => (
+    `)
+      return (
+
+        books.allMarkdownRemark.edges.map((book, i) => (
+
           <BookCard bookTitle={book.node.frontmatter.title} bookLink={book.node.frontmatter.amazonLink} key={i} bookCover={book.node.frontmatter.featuredImage.childImageSharp.fluid } />
-        ))
-      ) }
-    />
-  )
+        )))
+
+
+
+
 }
 
 export default FeaturedBooks;
