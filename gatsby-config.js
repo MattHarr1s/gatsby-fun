@@ -15,13 +15,13 @@ module.exports = {
       },
 
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `books`,
-        path: `${__dirname}/src/books`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `books`,
+    //     path: `${__dirname}/src/books`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Jamie Knight Writer`,
+        short_name: `jamieknight`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -53,7 +53,7 @@ module.exports = {
          * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
          * Example : 'dev-gatbsyjswp.pantheonsite.io' or 'www.example-site.com'
          */
-        baseUrl: `adminjaimeknightcom.local/`,
+        baseUrl: `adminjamieknight.local`,
         // The protocol. This can be http or https.
         protocol: `http`,
         // Indicates whether the site is hosted on wordpress.com.
