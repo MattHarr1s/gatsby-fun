@@ -623,7 +623,7 @@ pre tt:after {
 }
 
 .bookCard {
-  max-width: 300px;
+  width: 400px;
 }
 
 a {

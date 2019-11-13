@@ -13,7 +13,6 @@ const Heading = ({headingText, fontColorValue,  textAlignValue, fontSizeValue}) 
         <h1 style={{textAlign:textAlignValue, fontSize:fontSizeValue, color:fontColorValue }}>{headingText}</h1>
     )
 
-
 }
 
 Heading.defaultProps = {

@@ -32,7 +32,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 //   posts.forEach(({ node }, index) => {
 //     createPage({
 //       path: node.fields.slug,
-//       component: path.resolve(`./src/templates/blog-post.js`),
+//       component: path.resolve(`./src/templates/book-post.js`),
 //       context: {
 //         // Data passed to context is available
 //         // in page queries as GraphQL variables.
