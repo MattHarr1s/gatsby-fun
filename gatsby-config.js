@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Author Jamie Knight`,
-    description: `Your Dirty Little Secret`,
+    title: `Hot Romance Reads`,
+    description: `The Hottest Romance Reads`,
     author: `@gatsbyjs`,
   },
   plugins: [
