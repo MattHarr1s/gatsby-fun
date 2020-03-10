@@ -12,8 +12,8 @@ export default ({ data }) => {
         <Heading fontColorValue={`white`} fontSizeValue={`2.0rem`} headingText={`Hot Romance Reads`}/>
         <Heading  fontColorValue={`white`} fontSizeValue={`1.5rem`} headingText={`Bringing you all the HEAT in SALE and FREE romance reads!`}/>
       </Section>
-      <Section backgroundColor={`white`} padding={`1% 0 0 0`}>
-        <Heading headingText={`Featured Books`} />
+      <Section className={`booksSection`} backgroundColor={`white`} padding={`1% 0 0 0`}>
+        <Heading headingText={`Featured Hot Steals`} />
         <div className={`featuredBooks`}>
           <FeaturedBooks/>
         </div>

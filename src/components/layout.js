@@ -38,7 +38,7 @@ const Layout = ({ children, padding }) => {
 
         <main>{children}</main>
         <footer>
-          © Jamie Knight Writer {new Date().getFullYear()}
+          © Hot Romance Reads {new Date().getFullYear()}
         </footer>
       </div>
     </>

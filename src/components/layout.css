@@ -616,14 +616,15 @@ pre tt:after {
   content: "";
 }
 .featuredBooks {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .bookCard {
-  max-width: 300px;
+  flex: 1 1 30%
 }
 
 a {

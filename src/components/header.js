@@ -8,16 +8,15 @@ const Header = ({ siteTitle, siteDescription }) => (
   <header
     style={{
       background: `white`,
-      marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
           display: `flex`,
           flexFlow: `row nowrap`,
-        margin: `0 auto`,
-        maxWidth: `100%`,
-        padding: `1.45rem 1.0875rem`,
+          margin: `0 auto`,
+          maxWidth: `100%`,
+          padding: `.45rem 1.0875rem`,
       }}
     ><div className="site-title">
       <h1 style={{ margin: 0 }}>
