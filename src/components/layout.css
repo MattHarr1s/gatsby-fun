@@ -624,11 +624,44 @@ pre tt:after {
 }
 
 .bookCard {
-  flex: 1 1 30%
+  flex: 1 1 30%;
 }
 
 a {
   background-image: none;
+}
+
+.address {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.address p {
+  margin-bottom: 0.25rem;
+}
+
+.about-page, .terms-of-service {
+  max-width: 50rem;
+  padding: 1rem 3rem 0rem;
+}
+footer {
+  margin-top: 2rem;
+  padding: 10px 20px ;
+}
+
+.footer-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.footer-links a{
+  padding: 10px  20px;
+}
+.footer-links a:first-of-type{
+  padding: 10px 0;
 }
 
 @media only screen and (max-width: 960px) {

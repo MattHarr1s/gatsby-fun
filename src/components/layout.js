@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { Link } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
@@ -38,7 +38,12 @@ const Layout = ({ children, padding }) => {
 
         <main>{children}</main>
         <footer>
-          © Hot Romance Reads {new Date().getFullYear()}
+          ©{new Date().getFullYear()} Hot Romance Reads by Rave Reads Press
+          <div className={`footer-links`}>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/about">About</Link>
+            <Link to="/terms-of-service">Terms of Service</Link>
+          </div>
         </footer>
       </div>
     </>
